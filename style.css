@@ -1,0 +1,208 @@
+/* Imports the Nerko One and Open Sans fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@400;700&display=swap');
+
+/* Styles the body of the page */
+body {
+    font-family: "Open Sans", sans-serif;
+    display: flex; /* Defines a flexible layout */
+    background-color: #6f3606;
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    height: 100vh; /* Full-screen height */
+    margin: 0;
+    padding: 0;
+    background-image: url('background_image_2.PNG');
+    background-size: cover; /* Adjusts the image to cover the entire area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the background image */
+}
+
+/* Styles the text box over the image in the header */
+.text-over-image-main {
+    background-color: rgba(255, 255, 255, 0.80); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+}
+
+/* Footer with legal information */
+.text-over-image-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Link style in the footer */
+.text-over-image-footer a {
+    color: #ff5733; /* Changes the link color to orange */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Makes the link text bold */
+}
+  
+/* Styles the h1 titles */
+h1 {
+    font-family: "Nerko One", sans-serif;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: #0b0b0b;
+    text-align: center; /* Aligns the text to the center */
+    letter-spacing: 0.4rem; /* Letter spacing */
+}
+
+/* Styles the h2 titles */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0b0b0b; /* Text color */
+    text-align: center; /* Aligns the text to the center */
+    letter-spacing: 0.3rem; /* Letter spacing */
+}
+
+/* Adjusting spacing between h1 and h2 */
+h1, h2 {
+    line-height: 1.2;
+}
+
+/* Styles the subtitles */
+h3 {
+    font-size: 1.5rem;
+    color: #0b0b0b; 
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+/* Styles the page sections */
+section {
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers items horizontally */
+    margin-bottom: 3rem; /* Spacing below each section */
+}
+
+/* Styles the inputs inside the sections */
+section input {
+    width: 30rem; /* Input width */
+    border: none; /* Removes the default border */
+    padding: 1rem; /* Internal spacing */
+    border-radius: 1.5rem; /* Rounded border */
+    margin-top: 2rem;
+    margin-bottom: 1rem; /* Spacing below inputs */
+    color: #45474B; /* Text color */
+    font-size: 1rem; /* Font size */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+}
+
+/* Styles the buttons inside the sections */
+section button {
+    padding: 0.8rem 1.2rem; /* Button internal spacing */
+    border: none; /* Removes the default border */
+    border-radius: 1.5rem; /* Rounded border */
+    background-color: #7d2305; /* Button background color */
+    color: #F5F7F8; /* Button text color */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    transition: background-color 0.3s ease; /* Smooth animation on hover */
+    margin: 0.5rem;
+}
+
+/* Styles the search result box */
+.search-results {
+    width: 46rem; /* Maximum width of the results box */
+    overflow-y: visible; /* Adds vertical scrolling if necessary */
+    margin-top: 1rem; /* Spacing above the results box */
+    padding: 1rem; /* Internal spacing */
+    border-radius: 0.6rem; /* Rounded border */
+}
+
+/* Styles each result item */
+.result-item {
+    max-width: 1000px;
+    margin: 1rem;
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 0.6rem; /* Rounded border */
+    padding: 1.5rem; /* Internal spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    opacity: 0;
+    transform: translateY(100px);
+    animation: appear 0.3s forwards;
+}
+
+/* Animation for the results to appear smoothly */
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateY(10);
+    }
+}
+
+/* Styles the titles inside the result items */
+.result-item h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222831;
+    text-align: center;
+}
+
+/* Styles the links inside the result items */
+.result-item a {
+    display: block;
+    text-decoration: none; /* Removes the default underline of links */
+    color: #2196F3;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Styles the links on hover */
+.result-item a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Styles the meta description inside the result items */
+.meta-description {
+    color: #030303; /* Text color */
+    margin: 0.5rem 0; /* Margin above and below */
+}
+
+/* Styles the titles of highlighted fields */
+.highlighted-title {
+    font-weight: bold; /* Bold text */
+    text-decoration: underline; /* Underlined text */
+    color: #030303; /* Adjust color if desired */
+}
+
+/* Prevents text from exceeding the defined width */
+.result-item p {
+    word-wrap: break-word; /* Breaks words if they are too long */
+    margin-bottom: 1rem; /* Spacing between paragraphs */
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem; /* Adjusts the result box width */
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    .search-results {
+        width: 90%;
+        height: 40vh;
+    }
+
+    section input, section button {
+        width: 80%;
+    }
+}

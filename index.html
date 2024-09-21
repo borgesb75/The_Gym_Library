@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsiveness for mobile devices -->
+    <meta name="description" content="Database of weightlifting exercises for quick reference.">
+    <meta name="theme-color" content="#6f3606"> <!-- Defines the toolbar color on mobile devices -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,"> <!-- Neutral favicon (icon) -->
+    <title>The Gym Library</title>
+</head>
+<body>
+    <header>
+        <div class="text-over-image-main">
+            <h1>The Gym Library:</h1>
+            <h2>Your Workout at a Click</h2>
+            <h3>The Encyclopedia of Fitness and Exercise</h3>
+        </div>
+    </header>
+    <main>
+        <section>
+            <input type="search" placeholder="Enter the name of the exercise or muscle group" id="search-field">
+            <button onclick="search()">Search</button>
+            <button onclick="showAllExercises()">Show All Exercises</button>
+        </section>
+        <div class="results" id="search-results"></div>
+    </main>
+    <footer class="text-over-image-footer">
+        <p>September 2024 - This website is a reference tool for exercises, not a substitute for professional guidance.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/bruno-borges-silva/" target="_blank"> <!-- LinkedIn link, opens in a new tab -->
+              <i class="fab fa-linkedin"></i> Connect with us on LinkedIn <!-- LinkedIn icon using Font Awesome -->
+            </a>
+        </p>
+    </footer>
+    <script src="data.js"></script> <!-- Contains the exercise data -->
+    <script src="app.js"></script> <!-- Logic for the search application -->
+</body>
+</html>
