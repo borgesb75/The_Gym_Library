@@ -13,5 +13,4 @@ This project was developed as part of the **Dev Immersion with Google Gemini**, 
   - Indication of the main muscle groups targeted.
   - Integration with explanatory videos via YouTube.
   - User-friendly and responsive interface, adapted for both mobile devices and desktops.
-
 ![Project Screenshot](https://github.com/borgesb75/The_Gym_Library/blob/main/project_screenshot.PNG)
