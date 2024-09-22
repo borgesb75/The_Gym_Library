@@ -14,4 +14,4 @@ This project was developed as part of the **Dev Immersion with Google Gemini**, 
   - Integration with explanatory videos via YouTube.
   - User-friendly and responsive interface, adapted for both mobile devices and desktops.
 
-![Project Screenshot](path/to/screenshot.png)
+![Project Screenshot](https://github.com/borgesb75/The_Gym_Library/blob/main/project_screenshot.PNG)
